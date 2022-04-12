@@ -40,7 +40,7 @@ async def startprivate(client, message):
         if LOG_CHANNEL:
             await client.send_message(
                 LOG_CHANNEL,
-                f"#مستخدم جديد: \n\nمستخدم جديد [{message.from_user.first_name}](tg://user?id={message.from_user.id}) داس ستارت @{BOT_USERNAME} !!",
+                f"#مستخدم_جديد: \n\nمستخدم جديد [{message.from_user.first_name}](tg://user?id={message.from_user.id}) داس ستارت @{BOT_USERNAME} !!",
             )
 
     raise StopPropagation
